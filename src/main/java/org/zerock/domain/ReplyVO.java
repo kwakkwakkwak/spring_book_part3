@@ -5,8 +5,8 @@ import java.util.Date;
 public class ReplyVO {
     private Integer rno;
     private Integer bno;
-    private String replayText;
-    private String replayer;
+    private String replytext;
+    private String replyer;
 
     private Date regdate;
     private Date updatedate;
@@ -16,8 +16,8 @@ public class ReplyVO {
         return "ReplyVO{" +
                 "rno=" + rno +
                 ", bno=" + bno +
-                ", replayText='" + replayText + '\'' +
-                ", replayer='" + replayer + '\'' +
+                ", replytext='" + replytext + '\'' +
+                ", replayer='" + replyer + '\'' +
                 ", regdate=" + regdate +
                 ", updatedate=" + updatedate +
                 '}';
@@ -39,20 +39,20 @@ public class ReplyVO {
         this.bno = bno;
     }
 
-    public String getReplayText() {
-        return replayText;
+    public String getReplytext() {
+        return replytext;
     }
 
-    public void setReplayText(String replayText) {
-        this.replayText = replayText;
+    public void setReplytext(String replytext) {
+        this.replytext = replytext;
     }
 
-    public String getReplayer() {
-        return replayer;
+    public String getReplyer() {
+        return replyer;
     }
 
-    public void setReplayer(String replayer) {
-        this.replayer = replayer;
+    public void setReplyer(String replyer) {
+        this.replyer = replyer;
     }
 
     public Date getRegdate() {

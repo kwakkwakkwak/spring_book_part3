@@ -16,9 +16,9 @@ public class PageMaker {
 
     private int displayPageNum = 10;
 
-    private SearchCriteria cri;
+    private Criteria cri;
 
-    public void setCri(SearchCriteria cri) {
+    public void setCri(Criteria cri) {
         this.cri = cri;
     }
 

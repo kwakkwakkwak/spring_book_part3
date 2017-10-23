@@ -17,8 +17,8 @@
                 <form role="form" method="post">
                     <input type="hidden" name="page" value="${cri.page}">
                     <input type="hidden" name="perPageNum" value="${cri.perPageNum}">
-                    <input type="hidden" name="searchType" value="${cri.searchType}">
-                    <input type="hidden" name="keyword" value="${cri.keyword}">
+                    <%--<input type="hidden" name="searchType" value="${cri.searchType}">--%>
+                    <%--<input type="hidden" name="keyword" value="${cri.keyword}">--%>
 
                     <div class="box-body">
 
@@ -46,8 +46,8 @@
                     <!-- /.box-body -->
                 </form>
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">SAVE</button>
-                    <button type="submit" class="btn btn-warning">CANCEL</button>
+                    <button type="submit" class="btn btn-primary save">SAVE</button>
+                    <button type="submit" class="btn btn-warning cancel">CANCEL</button>
                 </div>
 
                 <script>
@@ -55,12 +55,13 @@
                         var formObj = $("form[role='form']");
                         console.log(formObj);
 
-                        $(".btn-warning").on("click", function () {
+                        $(".cancel").on("click", function () {
                             self.location = "/sboard/list?"
                                 + "page=${cri.page}&perPageNum=${cri.perPageNum}"
                                 + "&searchType=${cri.searchType}&keyword=${cri.keyword}";
                         });
-                        $(".btn-primary").on("click", function () {
+
+                        $(".save").on("click", function () {
                             formObj.submit();
                         });
                     })
